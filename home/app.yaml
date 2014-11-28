@@ -1,0 +1,15 @@
+application: siranatestapp01
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon.ico
+  static_files: home/images/favicon.ico
+  upload: home/images/favicon.ico
+- url: /
+  static_files: home/index.html
+  upload: /
+- url: /
+  static_dir: home
